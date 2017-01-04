@@ -8,7 +8,7 @@ publishMavenStyle := true
 
 scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.10.6", scalaVersion.value)
+crossScalaVersions := Seq("2.10.6", scalaVersion.value, "2.12.1")
 
 resolvers ++= Seq(
   "Sonatype Repository" at "http://oss.sonatype.org/content/repositories/releases"
@@ -20,7 +20,7 @@ logBuffered in Test := false
 
 libraryDependencies ++= Seq(
   "org.fluentd" % "fluent-logger" % "0.3.2",
-  "org.json4s" %% "json4s-native" % "3.4.0",
+  "org.json4s" %% "json4s-native" % "3.5.0",
   "junit" % "junit" % "4.12" % Test,
   "org.xerial" % "fluentd-standalone" % "0.1.2" % Test,
   "org.scalatest" %% "scalatest" % "3.0.0" % Test
